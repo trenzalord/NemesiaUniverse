@@ -1,7 +1,17 @@
 import { Component } from '@angular/core';
+import {NuTranslate} from "./providers/translate/nuTranslate";
 
 @Component({
+  moduleId: module.id,
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: 'app.component.html',
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  {
+
+  public name: String = 'Angular';
+
+  constructor(public nuTranslate: NuTranslate) {
+
+  }
+
+}
