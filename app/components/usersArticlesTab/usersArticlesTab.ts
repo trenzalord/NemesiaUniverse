@@ -1,7 +1,7 @@
 /**
  * Created by Quentin Gangler on 20/12/2016.
  */
-import { Component } from '@angular/core';
+import {Component, AfterViewInit, OnInit} from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -10,8 +10,13 @@ import { Component } from '@angular/core';
   styleUrls: ['usersArticlesTab.css'],
 })
 
-export class UsersArticlesTab {
+export class UsersArticlesTab implements OnInit{
+
   constructor() {
     console.log('UsersArticlesTab loaded');
+  }
+
+  ngOnInit(): void {
+    console.log('UsersArticlesTab init');
   }
 }

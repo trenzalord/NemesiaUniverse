@@ -5,7 +5,7 @@ export class Fr {
     public translations : any = {
       "nu-homeTabTitle": "Accueil",
       "nu-mainArticlesTabTitle": "Articles principaux",
-      //"nu-usersArticlesTabTitle": "Articles d'utilisateurs"
+      "nu-usersArticlesTabTitle": "Articles d'utilisateurs"
     };
 
     constructor(){};
